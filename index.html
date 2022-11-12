@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMoney</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="content">
+            <div class="container">
+
+                <header class="header">
+
+                    <a href="#" class="header__logo">
+                        MY<span>money</span>
+                    </a>
+
+                </header>
+
+                <section class="card">
+                    <span class="card__money">
+                        <span class="card__money-total">3000</span>
+                        <span class="card__money-sign">₴</span>
+                    </span>
+
+                    <div class="card__add">
+
+                    </div>
+                    <div class="card__minus">
+
+                    </div>
+                    <a class="card__author" href="https://github.com/SvayOff">
+                        By SvayOff
+                    </a>
+
+                </section>
+
+                <section class="list">
+                    <h1 class="list__title active">Операції з карткою</h1>
+                    <div class="list__purchases">
+
+                    </div>
+                </section>
+
+            </div>
+
+            <section class="blank__minus blank hide">
+                <div class="blank__minus-inner blank__inner">
+                    <form class="blank__minus-form form">
+                        <input id="input-minus" class="blank__minus-input input" type="number" placeholder="Введiть суму...">
+                        <input id="input-desc-minus" class="blank__minus-input input" type="text" placeholder="Опис...">
+                        <button class="blank__minus-btn btn">
+                            Зняти з Карти
+                        </button>
+                    </form>
+                    <div class="blank__minus-delete delete blank-hide">
+                        ×
+                    </div>
+                </div>
+            </section>
+
+            <section class="blank__add blank hide">
+                <div class="blank__add-inner blank__inner">
+                    <form class="blank__add-form form">
+                        <input id="input-add" class="blank__add-input input" type="number" placeholder="Введiть суму...">
+                        <input id="input-desc-add" class="blank__add-input input" type="text" placeholder="Опис...">
+                        <button class="blank__add-btn btn">
+                            Додати до Карти
+                        </button>
+                    </form>
+                    <div class="blank__add-delete delete blank-hide">
+                        ×
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+        </footer>
+
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
